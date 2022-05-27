@@ -1,0 +1,77 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: Location
+  examples: |
+    - Give me the address of library
+    - Give me library location
+    - How do I get to library?
+    - What is your address?
+    - What is your location?
+    - Where are you located?
+
+- intent: OpeningHours
+  examples: |
+    - When can I visit?
+    - What are your timings?
+    - When do you open?
+    - What time do you close?
+    - What about check-out time?
+    - What are your opening hours?
+    - When is the library open?
+    - Are you open on Sunday?
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

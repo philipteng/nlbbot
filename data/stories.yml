@@ -1,0 +1,22 @@
+version: "3.1"
+
+stories:
+
+- story: Location
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Location
+  - action: utter_location
+
+- story: OpeningHours
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: OpeningHours
+  - action: utter_openinghours
+
+- story: ending
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

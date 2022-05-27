@@ -1,0 +1,34 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - Location
+  - OpeningHours
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Welcome to the NLB Conversational Agent! How may I help you today?"
+
+  utter_location:
+  - text: |
+        Our libraries are located at various locations in Singapore.
+        You may click on [this link] (https://www.nlb.gov.sg/VisitUs.aspx) to know more.
+
+  utter_openinghours:
+  - text: |
+        Our Opening Hours are **Mon - Sun: 10:00 AM - 09:00 PM**. 
+        However, please note that we close at 5.00pm on eves of Christmas, New Year and Chinese New Year.
+
+  utter_goodbye:
+  - text: "Thank you for connecting with us. Good bye."
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
